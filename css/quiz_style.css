@@ -1,0 +1,193 @@
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+
+body{
+    background-color: #2F5C8F;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 0.3fr repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 0.3fr 1fr 0.3fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 70vh;
+    margin-top: 10vh;
+    width: 100%;
+    }
+
+    * {
+        padding: 0;
+        left: 0;
+        top: 0;
+    }
+    
+    #overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        opacity: 60%;
+    }
+    
+    #overlay_img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    
+    .div2 { 
+        grid-area: 4 / 2 / 5 / 4; 
+        background-color: white;
+        box-shadow: 10px 10px 10px -13px;
+        cursor: pointer;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+    }
+    .div4 { 
+        grid-area: 6 / 2 / 7 / 4; 
+        background-color: white;
+        box-shadow: 10px 10px 10px -13px;
+        cursor: pointer;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+    }
+    .div1 { 
+        grid-area: 1 / 2 / 3 / 7; 
+        background-color: white;
+        box-shadow: 10px 10px 10px -13px;
+        justify-content: center;
+        text-align: center;   
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+     }
+    .div3 { 
+        grid-area: 4 / 5 / 5 / 7; 
+        background-color: white;
+        box-shadow: 10px 10px 10px -13px;
+        cursor: pointer;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+    }
+    .div5 { 
+        grid-area: 6 / 5 / 7 / 7; 
+        background-color: white;
+        box-shadow: 10px 10px 10px -13px;
+        cursor: pointer;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .ABCD{
+        margin-top: 50px;
+        margin-left: 20px;
+        position: absolute;
+    }
+
+    .parent.hide{
+        display: hide;
+    }
+
+    .start{
+        display: block;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 500px;
+        background-color: white;
+        box-shadow: 10px 10px 10px -13px;
+    }
+
+    #naam{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        margin-top: 50%;
+        margin-left: 50%;
+        width: 200px;
+        height: 30px;
+        border: solid rgb(186, 227, 236);
+    }
+
+    #start-btn{
+        background-color: rgb(186, 227, 236);
+        border: rgb(186, 227, 236) solid 2px;
+        transform: translate(-50%, -50%);
+        margin-top: 75%;
+        margin-left: 50%;
+        width: 150px;
+        height: 60px;
+        color: black;
+    }
+
+    #start-btn:hover{
+        background-color: white;
+    }
+
+    #title{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        margin-top: 20%;
+        margin-left: 50%;
+        font-size: 40px;
+    }
+
+    #score{
+        transform: translate(-50%, -50%);
+        margin-top: 75%;
+        margin-left: 50%;
+    }
+
+    #naamOutput{
+        transform: translate(-50%, -50%);
+        margin-top: 60%;
+        margin-left: 50%;
+        position: absolute;
+    }
+
+    .start.hide{
+        display: none;
+    }
+
+    .result{
+        display: block;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 500px;
+        background-color: white;
+        box-shadow: 10px 10px 10px -13px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .result.hide{
+        display: none;
+    }
+
+    .div.hide{
+        display: none;
+    }
